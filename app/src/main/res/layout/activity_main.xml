@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.raghav.quizapp.MainActivity"
+    android:background="#AB47BC">
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true">
+
+
+        <TextView
+            style="@style/Question"
+            android:text="What is Phoebe's wedding gift to Chandler and Monica?"/>
+
+
+
+        <RadioGroup
+            style="@style/RadioGroup">
+            <RadioButton
+                android:id="@+id/radio_dishes"
+                style="@style/RadioButton"
+                android:text="Dishes"
+                />
+            <RadioButton
+                android:id="@+id/radio_ms_pacman"
+                style="@style/RadioButton"
+                android:text="Ms. Pac-Man arcade game"/>
+        </RadioGroup>
+
+
+
+
+        <TextView
+            style="@style/Question"
+            android:text="Who thinks there is a spirit inside of them?"/>
+
+
+        <EditText
+            android:id="@+id/spirit_text_field"
+            style="@style/EditText"
+            />
+
+
+        <TextView
+            style="@style/Question"
+            android:text="Who has Ross Married?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp">
+
+            <CheckBox
+                android:id="@+id/check_box_rachel"
+                style="@style/CheckBox"
+                android:text="Rachel Green"
+                />
+
+            <CheckBox
+                android:id="@+id/check_box_carol"
+                style="@style/CheckBox"
+                android:text="Carol Willick"
+                />
+
+            <CheckBox
+                android:id="@+id/check_box_emily"
+                style="@style/CheckBox"
+                android:text="Emily Waltham"/>
+
+            <CheckBox
+                android:id="@+id/check_box_phoebe"
+                style="@style/CheckBox"
+                android:text="Phoebe Buffay"/>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/Question"
+            android:text="Which animal statue does Ross buy for Joey?"/>
+
+        <RadioGroup
+            style="@style/RadioGroup" >
+
+            <RadioButton
+                android:id="@+id/radio_dog"
+                style="@style/RadioButton"
+                android:text="Dog"/>
+            <RadioButton
+                android:id="@+id/radio_duck"
+                style="@style/RadioButton"
+                android:text="Duck"/>
+
+        </RadioGroup>
+
+
+
+
+        <TextView
+            style="@style/Question"
+            android:text="Who is Chandler's Ex"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- Hint: Rhymes with Manice"
+            android:textColor="#E1BEE7"
+            android:paddingStart="18dp"/>
+
+        <EditText
+            android:id="@+id/janice_text_field"
+            style="@style/EditText"
+            />
+
+        <TextView
+            style="@style/Question"
+            android:text="Do Monica and Chandler get Married?"/>
+
+        <RadioGroup
+            style="@style/RadioGroup" >
+
+            <RadioButton
+                android:id="@+id/radio_yes"
+                style="@style/RadioButton"
+                android:text="Yes"/>
+            <RadioButton
+                android:id="@+id/radio_no"
+                style="@style/RadioButton"
+                android:text="No"/>
+
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Submit Answers"
+            android:background="#F3E5F5"
+            android:onClick="submitButtonPressed"
+            />
+    </LinearLayout>
+</ScrollView>
+
